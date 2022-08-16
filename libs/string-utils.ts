@@ -10,8 +10,11 @@
 class StringUtils {
     /**
      * 获取随机字符串,包含字母和数字
+     * @returns 一串随机字符串
+     * @example
+     * const str = getRandomUid() // 'x4mt63eaqv'
      */
-    static getRandomUid():string{
-        return Math.random().toString(36).substr(2)
+    static getRandomUid = (): string => {
+        return Math.random().toString(36).substring(2)
     }
 }
